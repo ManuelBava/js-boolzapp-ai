@@ -1,0 +1,88 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE STYLES */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ece5dd;
+}
+
+/* APP HEADER */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0.5rem 2rem;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.125rem;
+    color: #666666;
+  }
+}
+
+/* CHAT SECTION */
+
+.chat-box {
+  /* l'altezza è impostata indicando che il 100% di dynamic viewport height è sottratto alla somma dei pixels dell'header e del footer che rispettivamente sono di 70px l'uno. */
+  height: calc(100dvh - 140px);
+  padding: 2rem;
+  background-image: url('../img/background.jpg');
+  /* quando il contenuto del box supererà la sua altezza la barra di scorrimento apparirà. */
+  overflow-y: auto;
+}
+
+/* APP FOOTER */
+
+.app-footer {
+  padding: 0 2rem;
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 70px;
+  }
+
+  input {
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  button {
+    font-size: 2rem;
+    color: #666666;
+    border: none;
+    background-color: transparent;
+    transition: background, 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: #075e54;
+    }
+  }
+}
