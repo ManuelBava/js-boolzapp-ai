@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boolzapp AI</title>
   <link rel="icon" type="image/ico" href="img/favicon.ico" />
   <!-- Bootstrap Icon -->
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   <!-- Styles -->
   <link rel="stylesheet" href="./css/app.css" />
   <!-- Script JS -->
+  <script src="./js/config.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
 
@@ -34,11 +35,23 @@
   <!-- Box delle chat -->
   <div class="chat-box">
     <!-- Qui, i messaggi li mette JS -->
+    <!-- <div class="chat-row sent">
+      <div class="chat-message">
+        <p>Ciao, come stai?</p>
+        <time>27/09/2026 12:57:00 </time>
+      </div>
+    </div>
+    <div class="chat-row received">
+      <div class="chat-message">
+        <p>Tutto bene e tu?</p>
+        <time>27/09/2026 12:58:00 </time>
+      </div>
+    </div> -->
   </div>
 
   <!-- Fondo pagina -->
   <footer class="app-footer">
-    <form action="">
+    <form id="form" action="">
       <input type="text" placeholder="Scrivi qui..." />
 
       <button type="submit">
@@ -47,4 +60,5 @@
     </form>
   </footer>
 </body>
+
 </html>

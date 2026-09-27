@@ -51,6 +51,36 @@ body {
   background-image: url('../img/background.jpg');
   /* quando il contenuto del box supererà la sua altezza la barra di scorrimento apparirà. */
   overflow-y: auto;
+
+  .chat-row {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: end;
+
+    .chat-message {
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+
+    &.sent {
+      justify-content: flex-end;
+      padding-left: 2rem;
+
+      .chat-message {
+        background: rgb(60, 205, 60);
+      }
+    }
+
+    &.received {
+      justify-content: flex-start;
+      padding-right: 2rem;
+
+      .chat-message {
+        background: rgb(167, 167, 240);
+      }
+    }
+
+  }
 }
 
 /* APP FOOTER */
